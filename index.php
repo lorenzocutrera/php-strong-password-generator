@@ -1,3 +1,12 @@
+<?php 
+$n_caratteri = $_GET['n_caratteri'];
+
+var_dump($n_caratteri);
+
+$new_psw = 
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +17,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
         body {
-            background-color: #001632;
+            /* background-color: #001632; */
         }
         h1{
             color: #818b9a;
@@ -29,10 +38,10 @@
 
     <div class="container">
 
-        <form class="p-4">
+        <form method="$_GET" class="p-4">
             <div class="mb-3">
                 <label for="psw_lenght" class="form-label">Lunghezza password:</label>
-                <input type="password" class="form-control" id="psw_lenght" aria-describedby="emailHelp">
+                <input type="text" name="n_caratteri" class="form-control" id="psw_lenght" aria-describedby="emailHelp">
             </div>
             <div class="my-3">
                 <label for="exampleInputPassword1" class="form-label">Consenti ripetizioni di uno o più caratteri:</label>
